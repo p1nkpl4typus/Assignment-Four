@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: 2px dotted #ff6633;
+    outline-offset: 5px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -31,8 +36,16 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
-    border-bottom: 2px solid #FF6633;
+    border-bottom: 2px dashed #222;
 }
+
+.mobile-nav,
+.closed,
+#nav-btn {
+    display: none;
+}
+
+
 
 .btn {
     width: 250px;
@@ -48,10 +61,24 @@ nav {
     transition: 0.2s;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-sm:hover {
     background: #ff6633;
     color: #fff;
     border: 3px solid #ff6633;
+}
+
+.btn-sm {
+    width: 150px;
+    padding: 7px;
+    text-align: center;
+    background: #fff;
+    border: 3px solid #ff6633;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #222;
+    transition: 0.2s;
 }
 
 .logo {
@@ -280,10 +307,132 @@ hr {
       opacity: 1;
     }
   }
+
+#subscribe {
+    width: 300px;
+    padding: 10px 5px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+}
+
+#subscribe:focus {
+    border: 1px solid #1da4aa;
+}
+
+
   
 
 footer {
-    height: 200px;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
     background: #1DA4AA;
-    border-top: 2px solid #FF6633;
+    border-top: 2px dashed #222;
 }
+
+footer a {
+    color: #fff;
+}
+
+footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+footer i {
+    color: #fff;
+    font-size: 1.6em;
+    margin: 0.4em;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.social-icons {
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.social-icons ul {
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.social-icons ul:hover {
+    opacity: 1;
+}
+
+.social-icons ul li i:hover {
+ 
+    transform: scale(1.6);
+    transition: 0.2s;
+}
+
+.social-icons ul li a:hover {
+    border: none;
+}
+
+.legal {
+    margin-top: 60px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .mobile-nav-style {
+        font-family: 'Alfa Slab One', cursive;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.6em;
+        width: 100%;
+    }
+
+    #nav-btn {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
+        width: 250px;
+        background: coral;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.4s;
+    }
+    
+    .closed {
+        display: block;
+        transform: translate(250px, 0);
+    }
+
+    .links {
+        display: none;
+    }
+
+
+
+    }

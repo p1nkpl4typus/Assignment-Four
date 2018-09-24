@@ -1,3 +1,17 @@
+// Mobile Nav Bar
+const button = document.querySelector('#nav-btn');
+const menu = document.querySelector('#menu');
+
+function openMenu() {
+  menu.className = 'mobile-nav';
+};
+
+button.addEventListener('click', openMenu);
+
+
+
+
+// Project Slider
 const imgs = document.querySelectorAll(".project-slide img");
 const dots = document.querySelectorAll(".dot i");
 const leftArrow = document.querySelector(".arrow-left");

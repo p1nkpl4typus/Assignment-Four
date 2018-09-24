@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-
         <nav>
             <a href="./index.html" class="logo">
                 <img src="./assets/img/SVG/logo.svg" class="logo-img" alt="craftbrew logo" />
@@ -17,8 +16,19 @@
                     <span class="title">craftbrew</span>
                     <p>d.i.y.space + bar</p>
                 </div>
-            </a>  
+            </a>
 
+            <!-- Mobile Nav -->
+            <div class="mobile-nav-style">
+            <div id="nav-btn"><i class="fas fa-bars"></i> MENU</div>
+            </div>
+            
+            <div id="menu" class="mobile-nav closed">
+
+            </div>
+
+
+            <!-- Desktop/Tablet Nav -->
             <ul class="links">
                 <li><a href="./index.html">Welcome</a></li>
                 <li><a href="./about.html">How This Works</a></li>
@@ -55,21 +65,21 @@
                 <div class="event-card">
                     <img src="./assets/img/events/event-img1.jpg" alt="Paint Nite">
                     <h3>Paint Nite!</h3>
-                    <p class="highlight">October 3rd - 7:00PM to 9:00PM</p>
+                    <p class="highlight">October 3rd - 8:00PM to 11:00PM</p>
                     <p>Bring a friend down for a guided painting session. Ticket includes one free drink.</p>
                     <p><a href="./reserve.html">Book Now!</a></p>
                 </div>
                 <div class="event-card">
                     <img src="./assets/img/events/event-img2.jpg" alt="Macrame">
                     <h3>Macrame Wall-Hanging Workshop</h3>
-                    <p class="highlight">October 18th - 7:00PM to 9:00PM</p>
+                    <p class="highlight">October 18th - 8:00PM to 11:00PM</p>
                     <p>In this workshop you will learn the basics of macrame and create your own beautiful wall-hanging. Ticket includes one free drink.</p>
                     <p><a href="./reserve.html">Book Now!</a></p>
                 </div>
                 <div class="event-card">
                     <img src="./assets/img/events/event-img3.jpg" alt="Mask Making">
                     <h3>Mask Making Workshop</h3>
-                    <p class="highlight">October 24th - 7:00PM to 9:00PM</p>
+                    <p class="highlight">October 24th - 8:00PM to 11:00PM</p>
                     <p>Get ready for Halloween with this mask making class! Ticket includes one free drink.</p>
                     <p><a href="./reserve.html">Book Now!</a></p>
                 </div>
@@ -130,19 +140,48 @@
             <section>
                 <h2>Subscribe</h2>
                 <p>Be in the loop on upcoming events and discounts!</p>
-                <form action="./subsribe.html" method="POST">
-                    <label for="subsribe">Enter your email:</label>
-                    <input type="email" id="subsribe" name="subsribe" placeholder="ex. jane.doe@crafter.com" />
-                    <input type="submit" />
+                <form action="./subscribe.html" method="POST">
+                    <label for="subscribe">Enter your email:</label>
+                    <input type="email" id="subscribe" name="subscribe" placeholder="ex. jane.doe@crafter.com" />
+                    <input type="submit" class="btn-sm" />
                 </form>
             </section>
 
         </main>
 
         <footer>
-
+            <div class="biz-info">
+                <address>
+                    <a href="https://goo.gl/maps/Fj16nDFQGDz" target="_blank">123 Fake Street SE Calgary, AB T0X0X0 Canada</a><br />
+                </address>
+                (403) 555 - 1234<br />
+                <a href="mailto:hello@craftbrew.com">hello@craftbrew.com</a>
+            </div>
+            <div class="hours">
+                <h4>Hours of Operation</h4>
+                <p>Please see <a href="./about.html">How This Works</a> for information regarding arrival times and session windows!</p>
+                <ul>
+                    <li>Mondays & Holidays - CLOSED</li>
+                    <li>Tuesday, Wednesday, Thursday, Friday - 3 Sessions: 1PM to 4PM, 4:30PM to 7:30PM, 8PM to 11PM</li>
+                    <li>Saturday & Sunday - 4 Sessions: 9:30AM to 12:30PM, 1PM to 4PM, 4:30PM to 7:30PM, 8PM to 11PM </li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <h4>Follow Us!</h4>
+                <ul>
+                    <li><a href="https:///www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></a></i></li>
+                    <li><a href="https:///www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></a></i></li>
+                    <li><a href="https:///www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https:///www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+                    <li><a href="https:///www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="legal">
+                © Copyright craftbrewYYC 2018 (<a href="https://www.shelaghstorla.com" target="_blank">Shelagh Storla</a>). Some Rights Reserved.<br />
+                <a href="./legal.html#privacy">Privacy Policy</a>  | <a href="./legal.html#image">Image Credits </a> | <a href="./sitemap.html"> Site Map</a>
+            </div>
         </footer>
 
-        <script src="assets/main.js"></script>
+        <script src="./assets/main.js"></script>
     </body>
 </html>
