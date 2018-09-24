@@ -20,6 +20,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
+    border-bottom: 2px solid #FF6633;
 }
 
 .logo {
@@ -76,6 +77,5 @@ nav {
     background: url('../assets/img/photo4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 65%;
-    
+    background-position: 50% 65%;    
 }
