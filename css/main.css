@@ -116,11 +116,7 @@ nav {
                         url('../assets/img/photo4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-<<<<<<< HEAD
     background-position: 50% 65%;    
-}
-=======
-    background-position: 50% 65%;
 }
 
 .hero-msg {
@@ -289,5 +285,5 @@ hr {
 footer {
     height: 200px;
     background: #1DA4AA;
+    border-top: 2px solid #FF6633;
 }
->>>>>>> 66c352a607565ea93881443aa99056860ce33b36
