@@ -20,10 +20,21 @@
 
             <!-- Mobile Nav -->
             <div class="mobile-nav-style">
-            <div id="nav-btn"><i class="fas fa-bars"></i> MENU</div>
+            <button id="nav-btn-open" class="nav-btn"><i class="fas fa-bars"></i> MENU</button>
             </div>
             
-            <div id="menu" class="mobile-nav closed">
+            <div id="menu" class="mobile-nav closed" aria-expanded="false">
+                <div class="mobile-nav-style">
+                        <button id="nav-btn-closed" class="nav-btn"><i class="fas fa-times"></i> CLOSE</button>
+                        <ul class="mobile-nav-links">
+                                <li><a href="./index.html">Welcome</a></li>
+                                <li><a href="./about.html">How This Works</a></li>
+                                <li><a href="./projects.html">Project Menu</a></li>
+                                <li><a href="./reserve.html">Make a Reservation</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
+                            </ul>
+    
+                </div>
 
             </div>
 
@@ -161,9 +172,9 @@
                 <h4>Hours of Operation</h4>
                 <p>Please see <a href="./about.html">How This Works</a> for information regarding arrival times and session windows!</p>
                 <ul>
-                    <li>Mondays & Holidays - CLOSED</li>
-                    <li>Tuesday, Wednesday, Thursday, Friday - 3 Sessions: 1PM to 4PM, 4:30PM to 7:30PM, 8PM to 11PM</li>
-                    <li>Saturday & Sunday - 4 Sessions: 9:30AM to 12:30PM, 1PM to 4PM, 4:30PM to 7:30PM, 8PM to 11PM </li>
+                    <li><strong>Mondays & Holidays</strong> - CLOSED</li>
+                    <li><strong>Wednesday, Thursday, Friday</strong>  - 3 Sessions: 1PM to 4PM, 4:30PM to 7:30PM, 8PM to 11PM</li>
+                    <li><strong>Saturday & Sunday</strong>  - 4 Sessions: 9:30AM to 12:30PM, 1PM to 4PM, 4:30PM to 7:30PM, 8PM to 11PM </li>
                 </ul>
             </div>
             <div class="social-icons">
