@@ -303,6 +303,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 50px 10vw;
     padding: 30px;
     font-size: 18px;
 }
@@ -320,18 +321,53 @@ main h2 {
     font-size: 1.4em;
 }
 
-.main-about table {
-    border-collapse: collapse;
+.about-sessions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.session-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: left;
 }
 
-.main-about tr,
-.main-about td {
-    padding: 5px 20px;
-    margin: 0 10px;
+.session-grid p,
+.session-grid h4 {
+    margin: 7px 20px;
 }
 
 
+.about-drinks {
+    line-height: 1.6em;
+}
+
+.about-drinks em {
+    font-size: 0.9rem;
+}
+
+.about-drinks h4 {
+    color: #993333;
+}
+
+.break {
+    font-size: 1.6em;
+    color: #993333;
+    text-align: center;
+}
+
+.bullets {
+    list-style-type: disc;
+    padding-left: 50px;
+}
+
+.faq-list {
+    text-align: left;
+    line-height: 1.6;
+}
 
 hr {
     width: 50%;
@@ -355,12 +391,18 @@ hr {
 
 .card {
     width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 6px;
     box-shadow: 0px 2px 5px 0 #ddd;
     padding: 20px;
     margin: 20px;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 300px;
+    }
 }
 
 .card img {
@@ -460,8 +502,9 @@ hr {
 #subscribe {
     width: 300px;
     padding: 10px 5px;
-    border: 1px solid #aaa;
+    border: 2px solid #ff6633;
     border-radius: 2px;
+    margin: 10px 10px;
 }
 
 #subscribe:focus {
