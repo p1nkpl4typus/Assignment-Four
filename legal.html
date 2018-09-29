@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>craftbrew - Project Menu</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>craftbrew - d.i.y.space + bar</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
         <nav>
-                <a href="./index.html" class="logo">
-                    <img src="./assets/img/SVG/logo.svg" class="logo-img" alt="craftbrew logo" />
-                    <div>
-                        <span class="title">craftbrew</span>
-                        <p>d.i.y.space + bar</p>
-                    </div>
-                </a>
-    
-                <!-- Mobile Nav -->
+            <a href="./index.html" class="logo">
+                <img src="./assets/img/SVG/logo.svg" class="logo-img" alt="craftbrew logo" />
+                <div>
+                    <span class="title">craftbrew</span>
+                    <p>d.i.y.space + bar</p>
+                </div>
+            </a>
+
+            <!-- Mobile Nav -->
+            <div class="mobile-nav-style">
+            <button id="nav-btn-open" class="nav-btn"><i class="fas fa-bars"></i> MENU</button>
+            </div>
+            
+            <div id="menu" class="mobile-nav closed" aria-expanded="false">
                 <div class="mobile-nav-style">
-                <button id="nav-btn-open" class="nav-btn"><i class="fas fa-bars"></i> MENU</button>
-                </div>
-                
-                <div id="menu" class="mobile-nav closed" aria-expanded="false">
-                    <div class="mobile-nav-style">
-                            <button id="nav-btn-closed" class="nav-btn"><i class="fas fa-times"></i> CLOSE</button>
-                            <ul class="mobile-nav-links">
-                                    <li><a href="./index.html">Welcome</a></li>
-                                    <li><a href="./about.html">How This Works</a></li>
-                                    <li><a href="./projects.html">Project Menu</a></li>
-                                    <li><a href="./reserve.html">Make a Reservation</a></li>
-                                    <li><a href="./contact.html">Contact Us</a></li>
-                                </ul>
-        
-                    </div>
+                        <button id="nav-btn-closed" class="nav-btn"><i class="fas fa-times"></i> CLOSE</button>
+                        <ul class="mobile-nav-links">
+                                <li><a href="./index.html">Welcome</a></li>
+                                <li><a href="./about.html">How This Works</a></li>
+                                <li><a href="./projects.html">Project Menu</a></li>
+                                <li><a href="./reserve.html">Make a Reservation</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
+                            </ul>
     
                 </div>
-    
-    
-                <!-- Desktop/Tablet Nav -->
-                <ul class="links">
-                    <li><a href="./index.html">Welcome</a></li>
-                    <li><a href="./about.html">How This Works</a></li>
-                    <li><a href="./projects.html">Project Menu</a></li>
-                    <li><a href="./reserve.html">Make a Reservation</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
-    
-            </nav>
+
+            </div>
+
+
+            <!-- Desktop/Tablet Nav -->
+                <div class="links dot-hover">
+                    <a href="./index.html">Welcome</a>
+                    <a href="./about.html">How This Works</a>
+                    <a href="./projects.html">Project Menu</a>
+                    <a href="./reserve.html">Make a Reservation</a>
+                    <a href="./contact.html">Contact Us</a>
+                </div>
+        </nav>
             
             <header class="about">
                     <i class="far fa-calendar-alt"></i>

@@ -1,7 +1,7 @@
 # Assignment-Four
 
 Credits
-Photo 1 by Johnson Wang on Unsplash
+Photo 1 by Tim Arterbury on Unsplash
 
 Photo 2 by rawpixel on Unsplash
 
