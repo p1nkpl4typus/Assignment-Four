@@ -59,7 +59,11 @@
                
             </header>
     
-            <main>
+            <main class="main-reserve">
+
+                <div class="reserve-form">
+                <label for="num">Number of Crafters:</label>
+                <input type="number" id="num" name="num" value="1" step="1" min="1" max="10" required />
 
                 <table>
                     <thead>
@@ -68,62 +72,86 @@
                         </tr>
                     </thead>
                     <tr>
-                        <th>Sunday</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>T</th>
+                        <th>W</th>
+                        <th>T</th>
+                        <th>F</th>
+                        <th>S</th>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
+                        <td class="empty"></td>
+                        <td class="empty">1</td>
+                        <td class="open">2</td>
+                        <td class="open">3</td>
+                        <td class="open">4</td>
+                        <td class="open">5</td>
+                        <td class="open-wkd">6</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
+                        <td class="open-wkd">7</td>
+                        <td class="empty">8</td>
+                        <td class="open">9</td>
+                        <td class="open">10</td>
+                        <td class="open">11</td>
+                        <td class="open">12</td>
+                        <td class="open-wkd">13</td>
                     </tr>
                     <tr>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
+                        <td class="open-wkd">14</td>
+                        <td class="empty">15</td>
+                        <td class="open">16</td>
+                        <td class="open">17</td>
+                        <td class="open">18</td>
+                        <td class="open">19</td>
+                        <td class="open-wkd">20</td>
                     </tr>
                     <tr>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
+                        <td class="open-wkd">21</td>
+                        <td class="empty">22</td>
+                        <td class="open">23</td>
+                        <td class="open">24</td>
+                        <td class="open">25</td>
+                        <td class="open">26</td>
+                        <td class="open-wkd">27</td>
                     </tr>
                     <tr>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="open-wkd">28</td>
+                        <td class="empty">29</td>
+                        <td class="open">30</td>
+                        <td class="open">31</td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
                     </tr>
                 </table>
 
+                <div id="reserve-session">
+                    <p>Choose a Time:</p>
+                    <div class="session-opt">
+                    <input type="radio"
+                    name="time" id="time_1" class="time" value="1PM to 4PM"><label for="time_1">1PM to 4PM</label>
+                    <input type="radio"
+                    name="time" id="time_2" class="time" value="4:30PM to 7:30PM"><label for="time_2">4:30PM to 7:30PM</label>
+                    <input type="radio"
+                    name="time" id="time_3" class="time" value="8PM to 11PM"><label for="time_3">8PM to 11PM</label>
+                    </div>
+                </div>
 
+                <div id="reserve-session-wkd">
+                    <p>Choose a Time:</p>
+                    <div class="session-opt-wkd">
+                    <input type="radio" name="time-wkd" id="time_4" class="time" value="9:30AM to 12:30PM"><label for="time_4">9:30AM to 12:30PM</label>
+                    <input type="radio" name="time-wkd" id="time_5" class="time" value="1PM to 4PM"><label for="time_5">1PM to 4PM</label>
+                    <input type="radio" name="time-wkd" id="time_6" class="time" value="4:30PM to 7:30PM"><label for="time_6">4:30PM to 7:30PM</label>
+                    <input type="radio" name="time-wkd" id="time_7" class="time" value="8PM to 11PM"><label for="time_7">8PM to 11PM</label>
+                    </div>
+                </div>
+
+                <label for="crafter-name">Your Name: </label><input type="text" id="crafter-name">
+
+            </div>
 
 
 
@@ -182,7 +210,7 @@
                         <a href="https://goo.gl/maps/Fj16nDFQGDz" target="_blank">123 Fake Street SE Calgary, AB T0X0X0 Canada</a><br />
                     </address>
                     (403) 555 - 1234<br />
-                    <a href="mailto:hello@craftbrew.com">hello@craftbrew.com</a>
+                    <a href="mailto:hello@craftbrewyyc.com">hello@craftbrewyyc.com</a>
                 </div>
                 <div class="hours">
                     <h4>Hours of Operation</h4>
@@ -210,5 +238,6 @@
             </footer>
     
             <script src="./assets/main.js"></script>    
+            <script src="./assets/reserve.js"></script>    
 </body>
 </html>

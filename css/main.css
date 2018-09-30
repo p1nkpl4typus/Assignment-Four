@@ -394,9 +394,13 @@ hr {
     height: 450px;
     border-radius: 6px;
     box-shadow: 0px 2px 5px 0 #ddd;
-    padding: 20px;
     margin: 20px;
     transition: 0.2s;
+}
+
+.card.event {
+    padding: 20px;
+    height: 550px;
 }
 
 @media screen and (max-width: 500px) {
@@ -405,10 +409,30 @@ hr {
     }
 }
 
-.card img {
-    width: auto;
-    height: 150px;
+.card-img {
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
 }
+
+.card-img-1 { background-image: url("../assets/img/projects/project-img1.jpg") }
+.card-img-2 { background-image: url("../assets/img/projects/project-img2.jpg") }
+.card-img-3 { background-image: url("../assets/img/projects/project-img3.jpg") }
+.card-img-4 { background-image: url("../assets/img/projects/project-img4.jpg"); background-position: 50% 75%; }
+.card-img-5 { background-image: url("../assets/img/projects/project-img5.jpg") }
+.card-img-6 { background-image: url("../assets/img/projects/project-img6.jpg") }
+.card-img-7 { background-image: url("../assets/img/projects/project-img7.jpg") }
+.card-img-8 { background-image: url("../assets/img/projects/project-img8.jpg") }
+.card-img-9 { background-image: url("../assets/img/projects/project-img9.jpg") }
+.card-img-10 { background-image: url("../assets/img/projects/project-img10.jpg") }
+
+.event-img-1 { background-image: url("../assets/img/events/event-img1.jpg") }
+.event-img-2 { background-image: url("../assets/img/events/event-img2.jpg") }
+.event-img-3 { background-image: url("../assets/img/events/event-img3.jpg") }
 
 .card:hover {
     transform: scale(1.1);
@@ -522,7 +546,105 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
+.reserve-form table {
+    border-collapse: collapse;
+}
+
+.reserve-form td,
+.reserve-form tr {
+    padding: 10px;
+    border: 1px solid #1DA4AA;
+}
+
+
+.reserve-form td:hover {
+    background-color: rgba(29, 164, 170, 0.4);
+    cursor: pointer;
+}
+
+.reserve-form .empty:hover {
+    background-color: white;
+    cursor: default;
+}
+
+.reserve-form td:nth-of-type(2) {
+    color: #ccc;
+}
+
+#reserve-session,
+#reserve-session-wkd {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    height: auto;
+    width: 274px;
+    border: 1px solid #1da4aa;
+    border-radius: 3px;
+}
+
+.session-opt,
+.session-opt-wkd {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin: 0 0 1.5rem;
+        box-sizing: border-box;
+        font-size: 0;
+}
+
+.session-opt input,
+.session-opt-wkd input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+.session-opt input + label,
+.session-opt-wkd input + label {
+    margin: 10px 0;
+    padding: 0.75rem 2rem;
+    position: relative;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(60, 64, 60, 0.1);
+    transition: border-color 0.15s ease-out, color 0.25s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+
+.session-opt input:hover + label,
+.session-opt-wkd input:hover + label {
+    border-color: #1da4aa;
+  }
   
+  .session-opt input:checked + label,
+  .session-opt-wkd input:checked + label {
+    background-color: #1da4aa;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(60, 64, 60, 0.1);
+    border-color: hsl(183, 71%, 10%);
+    z-index: 1;
+  }
+
+#reserve-session p,
+#reserve-session-wkd p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 footer {
     padding: 30px 0;
