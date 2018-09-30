@@ -99,6 +99,18 @@ nav {
     transition: 0.2s;
 }
 
+.btn-disabled {
+    border: 3px solid #ccc;
+    color: #ccc;
+    background: #bbb;
+}
+
+.btn-disabled:hover {
+    border: 3px solid #ccc;
+    background: #bbb;
+    color: #ccc;
+}
+
 .logo {
     display: flex;
     color: #222;
@@ -545,10 +557,77 @@ hr {
 .contact-form form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #1da4aa;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.align {
+    display: flex;
+    align-items: flex-end;
+}
+
+#subscribe-box {
+    width: 25px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.contact-form textarea {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #1da4aa;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.contact-form input[type="submit"] {
+    background: #fff;
+    height: 50px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #1da4aa;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reserve-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#num {
+    width: 50px;
+    height: 50px;
+    border:1px solid #1da4aa;
+    border-radius: 3px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#crafter-name,
+#crafter-email {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #1da4aa;
+    border-radius: 3px;
+    margin: 10px 0;
 }
 
 .reserve-form table {
     border-collapse: collapse;
+    margin: 20px;
+    background: #fff;
+
 }
 
 .reserve-form td,
@@ -578,12 +657,19 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-bottom: 20px;
     padding-top: 20px;
     height: auto;
     width: 274px;
     border: 1px solid #1da4aa;
     border-radius: 3px;
+}
+
+#reserve-session span,
+#reserve-session-wkd span {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #993333;
 }
 
 .session-opt,
@@ -643,7 +729,9 @@ hr {
     padding: 0;
 }
 
-
+#reserve-details {
+    display: none;
+}
 
 
 footer {

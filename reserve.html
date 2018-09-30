@@ -61,7 +61,21 @@
     
             <main class="main-reserve">
 
+                <h2>Let's Craft Together!</h2>
+                <p>The Fine Print:</p>
+                <ul class="bullets faq-list">
+                    <li>Projects can take up to the whole three hours. We ask that you show up within the first hour of your crafting session to ensure you have enough time to complete your masterpiece.</li>
+                    <li>A reservation is not a pre-paid ticket. We verify your credit card prior to your session starting and settle the bill at the end. Costs for <a href="./about.html#drinks">drinks</a> and <a href="./projects.html">projects</a> vary. Gratuity is not included.</a></li>
+                    <li>You can modify your reservation anytime up to 24 hours prior to your session time.</li>
+                    <li>There is a $20 no show fee per person. If you reserve a party of six and only four show up, $40 will be added to your bill.</li>
+                    <li>There is a 1 project per reserved seat purchase requirement.</li>
+                </ul>
+                <p>Questions? <a href="mailto:reservations@craftbrewyyc.com">Email us at reservations@craftbrewyyc.com</a> or <a href="tel:+1-403-555-1234">call us at 403 555 1234</a>.</p>
+
                 <div class="reserve-form">
+                    <p class="highlight">All fields are required.</p>
+                        <label for="crafter-name">Your Name: </label><input type="text" id="crafter-name" required />
+                        <label for="crafter-email">Your Email: </label><input type="email" id="crafter-email" required />
                 <label for="num">Number of Crafters:</label>
                 <input type="number" id="num" name="num" value="1" step="1" min="1" max="10" required />
 
@@ -128,6 +142,7 @@
                 </table>
 
                 <div id="reserve-session">
+                    <span id="date-display"></span>
                     <p>Choose a Time:</p>
                     <div class="session-opt">
                     <input type="radio"
@@ -140,6 +155,7 @@
                 </div>
 
                 <div id="reserve-session-wkd">
+                    <span id="date-display-wkd"></span>
                     <p>Choose a Time:</p>
                     <div class="session-opt-wkd">
                     <input type="radio" name="time-wkd" id="time_4" class="time" value="9:30AM to 12:30PM"><label for="time_4">9:30AM to 12:30PM</label>
@@ -149,11 +165,13 @@
                     </div>
                 </div>
 
-                <label for="crafter-name">Your Name: </label><input type="text" id="crafter-name">
 
+                <button id="reserve-submit" class="btn btn-disabled" disabled>Reserve!</button>
             </div>
 
-
+            <div id="reserve-details">
+                    <p>Thank you <span id="crafter"></span>! Your reservation has been confirmed. An email has been sent to <span id="email"></span>. Happy Crafting!</p>
+                </div>
 
 
 
@@ -233,7 +251,7 @@
                 </div>
                 <div class="legal">
                     © Copyright craftbrewYYC 2018 (<a href="https://www.shelaghstorla.com" target="_blank">Shelagh Storla</a>). Some Rights Reserved.<br />
-                    <a href="./legal.html#privacy">Privacy Policy</a>  | <a href="./legal.html#image">Image Credits </a> | <a href="./sitemap.html"> Site Map</a>
+                    <a href="./legal.html#privacy">Privacy Policy</a>  | <a href="./legal.html#image">Image Credits </a>
                 </div>
             </footer>
     
