@@ -6,7 +6,7 @@
 
 Feel free to use lorem ipsum for the content. I will be marking this project based on the following:
 
-###Structure
+### Structure
 This project should have either 4 pages or 4 sections, depending on style of site. Those 4 sections or pages are:
   1. Home / Main
   can be product summary
@@ -24,7 +24,7 @@ This must involve an input field and submit button
 Does not need to submit anywhere
 Example could be email input, comments input and a send button
 
-###General
+### General
 - Nav must include a logo
 - All links to other pages or sections must work
 - Must include hero section
