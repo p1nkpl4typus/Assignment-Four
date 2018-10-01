@@ -1,54 +1,38 @@
 # Assignment-Four
 
-Credits
-Photo 1 by Tim Arterbury on Unsplash
+## Four Page Website - 40%
 
-Photo 2 by rawpixel on Unsplash
+***
 
-Photo 3 by Jasmin Schreiber on Unsplash
+Feel free to use lorem ipsum for the content. I will be marking this project based on the following:
 
-Photo 4 by tanialee gonzalez on Unsplash
+###Structure
+This project should have either 4 pages or 4 sections, depending on style of site. Those 4 sections or pages are:
+  1. Home / Main
+  can be product summary
+  can be service summary
+  2. About
+  can be who are you
+  can be what you do
+  can be who your staff is
+  3. Product
+  can be product details
+  can be service details
+  4. Contact
+  
+This must involve an input field and submit button
+Does not need to submit anywhere
+Example could be email input, comments input and a send button
 
-Photo 5 by Paloma A. on Unsplash
+###General
+- Nav must include a logo
+- All links to other pages or sections must work
+- Must include hero section
+- Must include social icons on every page (common place is in the footer)
+- Site must be responsive
+- Site must have a working mobile menu
+- Site must include a css transition (other than the mobile navigation)
 
-Event-Img 1 Photo by Andrian Valeanu on Unsplash
-
-Event-Img 2 Public Domain
-
-Event-Img 3 Photo by Llanydd Lloyd on Unsplash
-
-
-Project-Img 1 by Miki Yoshihito https://flic.kr/p/KveeUB
-
-Project-Img 2 by Gaye Launder https://flic.kr/p/AQHrn6
-
-Project-Img 3 Photo by Rainy Wong on Unsplash
-
-Project-Img 4 Photo by Olia Gozha on Unsplash
-
-Project-Img 5 by Angela https://flic.kr/p/aRFhp2
-
-Project-Img 6 by Sake Puppets https://flic.kr/p/9y9JZv
-
-Project-Img 7 Photo by Jonas Svidras on Unsplash
-
-Project-Img 8 by Elin https://flic.kr/p/8UmQyW
-
-Project-Img 9 by Christine Rondeau https://flic.kr/p/aTroqc
-
-Project-Img 10 Pixabay
-
-
-Project List
-1. Printed Tote Bag
-2. Terrarium
-3. Pallet Wood Sign
-4. Concrete Planter & Succulent
-5. Yarn Wreath
-6. Coasters
-7. Wood Bead Bracelet
-8. Clay Ornaments or Magnets
-9. Felted Dryer Balls
-10. Reusable Beeswax Food Wrap
-
+***
+[Solution](https://assignment-four-ddmovvyzgo.now.sh/ "Solution")
 
