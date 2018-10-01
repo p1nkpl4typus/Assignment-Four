@@ -30,7 +30,6 @@ a:hover {
     border-bottom: 2px dotted #ff6633;
 }
 
-
 h2 {
     padding: 0;
     margin: 0;
@@ -41,7 +40,6 @@ ul {
     padding: 0;
     margin: 0;
 }
-
 
 nav {
     display: flex;
@@ -147,44 +145,44 @@ nav {
 
 .links a {
     position: relative;
-	display: inline-block;
-	margin: 10px 15px;
-	outline: none;
+    display: inline-block;
+    margin: 10px 15px;
+    outline: none;
     color: #222;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
-	text-decoration: none;
-	text-shadow: 0 0 1px rgba(29, 164, 170, 0.3);
-	font-size: 1.1em;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(29, 164, 170, 0.3);
+    font-size: 1.1em;
 }
 
 .dot-hover a {
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
     transition: color 0.3s;
 }
 
 .dot-hover a::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	color: transparent;
-	content: '.';
-	text-shadow: 0 0 transparent;
-	font-size: 1.2em;
-	-webkit-transition: text-shadow 0.3s, color 0.3s;
-	-moz-transition: text-shadow 0.3s, color 0.3s;
-	transition: text-shadow 0.3s, color 0.3s;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	transform: translateX(-50%);
-	pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: transparent;
+    content: '.';
+    text-shadow: 0 0 transparent;
+    font-size: 1.2em;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 
 .dot-hover a:hover::before,
 .dot-hover a:focus::before {
-	color: #ff6633;
-	text-shadow: 10px 0 #ff6633, 20px 0 #ff6633, -10px 0 #ff6633, -20px 0 #ff6633;
+    color: #ff6633;
+    text-shadow: 10px 0 #ff6633, 20px 0 #ff6633, -10px 0 #ff6633, -20px 0 #ff6633;
 }
 
 .dot-hover a:hover,
@@ -192,10 +190,6 @@ nav {
     color: #ff6633;
     border-bottom: none;
 }
-
-
-
-
 
 .hero {
     display: flex;
@@ -222,7 +216,6 @@ nav {
     font-family: 'Alfa Slab One', cursive;
     font-size: 3em;
     font-weight: normal;
-
 }
 
 .hero-msg p {
@@ -275,7 +268,6 @@ nav {
     background-position: 50% 65%;
     height: 300px;
 }
-
 
 .hero-wrapper {
     padding-top: 60px;
@@ -468,8 +460,9 @@ hr {
     background: #1DA4AA;
     background: linear-gradient(45deg, #ff6633, #222, #1DA4AA);
     overflow: hidden;
-  }
-  .project-slide img {
+}
+
+.project-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -480,8 +473,9 @@ hr {
     left: 0;
     right: 0;
     animation: fade 1s;
-  }
-  .project-slide .arrow {
+}
+
+.project-slide .arrow {
     z-index: 10;
     position: absolute;
     margin: auto;
@@ -495,18 +489,22 @@ hr {
     color: #fff;
     opacity: 0.5;
     transition: opacity 1s;
-  }
-  .project-slide .arrow:hover {
+}
+
+.project-slide .arrow:hover {
     cursor: pointer;
     opacity: 1;
-  }
-  .project-slide .arrow-left {
+}
+
+.project-slide .arrow-left {
     left: 2%;
-  }
-  .project-slide .arrow-right {
+}
+
+.project-slide .arrow-right {
     right: 2%;
-  }
-  .project-slide .dots {
+}
+
+.project-slide .dots {
     position: absolute;
     margin: auto;
     top: auto;
@@ -516,24 +514,25 @@ hr {
     width: 25rem;
     height: auto;
     z-index: 5;
-  }
-  .project-slide .dots .dot {
+}
+
+.project-slide .dots .dot {
     width: 2rem;
     height: 2rem;
     display: inline-flex;
     align-content: center;
     justify-content: center;
     color: #fff;
-  }
-  
-  @keyframes fade {
+}
+
+@keyframes fade {
     from {
-      opacity: 0.1;
+        opacity: 0.1;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
 #subscribe {
     width: 300px;
@@ -627,7 +626,6 @@ hr {
     border-collapse: collapse;
     margin: 20px;
     background: #fff;
-
 }
 
 .reserve-form td,
@@ -674,13 +672,13 @@ hr {
 
 .session-opt,
 .session-opt-wkd {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        margin: 0 0 1.5rem;
-        box-sizing: border-box;
-        font-size: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0 0 1.5rem;
+    box-sizing: border-box;
+    font-size: 0;
 }
 
 .session-opt input,
@@ -712,16 +710,16 @@ hr {
 .session-opt input:hover + label,
 .session-opt-wkd input:hover + label {
     border-color: #1da4aa;
-  }
-  
-  .session-opt input:checked + label,
-  .session-opt-wkd input:checked + label {
+}
+
+.session-opt input:checked + label,
+.session-opt-wkd input:checked + label {
     background-color: #1da4aa;
     color: #fff;
     box-shadow: 0 0 10px rgba(60, 64, 60, 0.1);
     border-color: hsl(183, 71%, 10%);
     z-index: 1;
-  }
+}
 
 #reserve-session p,
 #reserve-session-wkd p {
@@ -775,7 +773,6 @@ address {
 .social-icons {
     text-align: center;
     text-transform: uppercase;
-    
 }
 
 .social-icons ul {
@@ -790,7 +787,6 @@ address {
 }
 
 .social-icons ul li i:hover {
- 
     transform: scale(1.6);
     transition: 0.2s;
 }
@@ -806,7 +802,6 @@ address {
 }
 
 /* (min-width : 320px) and  */
-
 @media screen and (max-width : 1024px) {
 
     nav {
@@ -830,7 +825,7 @@ address {
         color: #222;
         background: none;
         border: none;
-     }
+    }
 
     .nav-btn:hover {
         cursor: pointer;
@@ -848,9 +843,8 @@ address {
         opacity: 1;
         transform: translate(0, 0);
         transition: all 0.4s ease-in;
-       
     }
-    
+
     .closed {
         transform: translate(0, -600px);
         opacity: 0.5;
@@ -875,14 +869,12 @@ address {
 
     .mobile-nav-links li {
         list-style-type: none;
-
     }
 
-   .hero-msg {
+    .hero-msg {
         align-items: center;
         padding: 20px;
         text-align: center;
-
     }
 
     footer {
@@ -896,11 +888,4 @@ address {
     footer div {
         padding: 30px;
     }
-
-
-
-    }
-
-    .debugger {
-        background: red;
-    }
+}
